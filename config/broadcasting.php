@@ -38,9 +38,13 @@ return [
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'encrypted' => true,
-                'host' => 'laravel8_websocket.dev',
+                'host' => 'laravel8-websockets.dev',
                 'port' => 6001,
-                'scheme' => 'http'
+                'scheme' => 'https',
+                'curl_options' => [
+                    CURLOPT_SSL_VERIFYHOST => 0,
+                    CURLOPT_SSL_VERIFYPEER => 0,
+                ]
             ],
         ],
 

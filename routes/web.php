@@ -20,6 +20,6 @@ Route::get('/', function () {
 
 
 Route::get('/testevent',function(){
-    event(new \App\Events\TestEvent());
+    event(new App\Events\RealTimeMessage('Hello World'));
 
 });
