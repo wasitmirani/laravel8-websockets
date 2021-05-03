@@ -23,3 +23,5 @@ Route::get('/testevent',function(){
     event(new App\Events\RealTimeMessage('Hello World'));
 
 });
+
+// as
